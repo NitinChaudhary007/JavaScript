@@ -216,10 +216,44 @@ const sum2 = oddIntegers.reduce((prevValue, curValue, curIndex, array) => {
 console.log("using reduce =", sum2)
 
 
+console.log("************************************************************");
+console.log("split() Method");
+// it is a string method
+// it split the string into multiple strings and returns an array
+
+const data = "max;min;mike;suzie";
+const modData = data.split(";");
+console.log(modData);
+
+
+console.log("join Method");
+// return a string
+// merges all the element of array to a single stringe value.
+
+const nameFragmants = ["Max", "Schwarz"];
+const name = nameFragmants.join(" ");
+console.log(name);
 
 
 
+console.log("************************************************************");
+console.log("(...) spread Method");
+// returns all the elements of array alltogether
 
+const copiedName = [...nameFragmants];
+
+
+const num5 = [32, 35, 65, 76, 87, 23, 1, 16];
+console.log(Math.min(1, 3, 5, 6));                  // requires multiple arguement
+console.log(Math.min(...num5));                  // requires multiple arguement
+
+console.log("************************************************************");
+console.log("Array Destructuring");
+// returns all the elements of array alltogether
+
+const nameFrag = ["Ravi", "kant", "Mr", 34];
+const [namee, lastnamee, ...otherInfo] = nameFrag;      // here the ...otherInfo is acting as the rest operator -> collecting all remaining values of the array
+console.log(namee, lastnamee, otherInfo);
 
 
 
@@ -230,6 +264,22 @@ console.log("using reduce =", sum2)
 // 3. forEach()
 // 4. map()
 // 5. filter()
-// 6.
-// 7.
-// 8.
+
+// #############################################################################################################################################################
+// #############################################################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
